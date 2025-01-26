@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scrolling Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark transparent-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span style="color: #191265;">Lux</span><span style="color: #33b5ff;">ora</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-text" href="#">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link nav-text" href=""><i class="fa fa-shopping-cart"
+                                style="font-size:38px;color:rgb(255, 255, 255)"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel container-fluid">
+        <h1>Shop <span></span></h1>
+        <div class="cards-upward">
+            <div class="card"
+                style="background-image: url(https://img.freepik.com/premium-psd/psd-encarte-social-media-template-flyer-week-customer_706703-31.jpg?w=740);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                Card 1</div>
+            <div class="card"
+                style="background-image: url(https://img.freepik.com/free-vector/ecologic-creams-poster-with-daisies_23-2147559660.jpg?t=st=1737734269~exp=1737737869~hmac=9c0b453e155da87f0d2f8a1165bcffddadecd358f735f4741dc1cc8796a090ed&w=826);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                Card 2</div>
+            <div class="card"
+                style="background-image: url(https://img.freepik.com/free-vector/blue-gym-flyer-template_23-2147791290.jpg?t=st=1737734923~exp=1737738523~hmac=8fa141c79c6cca492f48fa285567d40dc6a3128b0c21c240344e77b4679bd6ab&w=826);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                >Card 3</div>
+            <div class="card"
+                style="background-image: url(https://img.freepik.com/free-vector/travel-flyer-template_23-2148066387.jpg?t=st=1737734330~exp=1737737930~hmac=e44742c69fe7d95f8d649caf53ab7760dd9587cd09d80ee419f52095928f3610&w=826);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                >Card 4</div>
+            <div class="card"
+                style="background-image: url(https://img.freepik.com/premium-psd/psd-encarte-social-media-template-flyer-week-customer_706703-31.jpg?w=740);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                >Card 5</div>
+            <div class="card"
+                style="background-image: url(https://img.freepik.com/free-vector/travel-poster-template-with-photo_23-2148303092.jpg?t=st=1737734417~exp=1737738017~hmac=698a8f6b5d48d57ebabedaf3a362d9544b1cfdc4732c36378635e70843607951&w=826);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                card 6</div>
+
+        </div>
+        <div class="cards-downward">
+
+            <div class="card opposite"
+                style="background-image: url(https://img.freepik.com/premium-psd/psd-encarte-social-media-template-flyer-week-customer_706703-31.jpg?w=740);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                Card 1</div>
+            <div class="card opposite"
+                style="background-image: url(https://img.freepik.com/free-vector/ecologic-creams-poster-with-daisies_23-2147559660.jpg?t=st=1737734269~exp=1737737869~hmac=9c0b453e155da87f0d2f8a1165bcffddadecd358f735f4741dc1cc8796a090ed&w=826);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                Card 2</div>
+            <div class="card opposite"
+                style="background-image: url(https://img.freepik.com/free-vector/blue-gym-flyer-template_23-2147791290.jpg?t=st=1737734923~exp=1737738523~hmac=8fa141c79c6cca492f48fa285567d40dc6a3128b0c21c240344e77b4679bd6ab&w=826);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                >Card 3</div>
+            <div class="card opposite"
+                style="background-image: url(https://img.freepik.com/free-vector/travel-flyer-template_23-2148066387.jpg?t=st=1737734330~exp=1737737930~hmac=e44742c69fe7d95f8d649caf53ab7760dd9587cd09d80ee419f52095928f3610&w=826);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                >Card 4</div>
+            <div class="card opposite"
+                style="background-image: url(https://img.freepik.com/premium-psd/psd-encarte-social-media-template-flyer-week-customer_706703-31.jpg?w=740);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                >Card 5</div>
+            <div class="card opposite"
+                style="background-image: url(https://img.freepik.com/free-vector/travel-poster-template-with-photo_23-2148303092.jpg?t=st=1737734417~exp=1737738017~hmac=698a8f6b5d48d57ebabedaf3a362d9544b1cfdc4732c36378635e70843607951&w=826);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+                card 6</div>
+
+        </div>
+    </div>
+
+    <div id="content" style=" background-color: #19126500;">
+        <center>
+            <h1>Content Section</h1>
+        </center>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="./json shooping/productStore.html">
+                    <div class="custom-main-card">
+                        <img src="https://via.placeholder.com/200" class="custom-card-img-top" alt="Main Card 1">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Main Card 1</h5>
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 1"></a>
+                                    <p>Title 1</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 2"></a>
+                                    <p>Title 2</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 3"></a>
+                                    <p>Title 3</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 4"></a>
+                                    <p>Title 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-md-3">
+                <a href="/json shooping/productStore.html">
+                    <div class="custom-main-card">
+                        <img src="https://via.placeholder.com/200" class="custom-card-img-top" alt="Main Card 2">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Main Card 2</h5>
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 1"></a>
+                                    <p>Title 1</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 2"></a>
+                                    <p>Title 2</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 3"></a>
+                                    <p>Title 3</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.htmll"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 4"></a>
+                                    <p>Title 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="./json shooping/productStore.html   ">
+                    <div class="custom-main-card">
+                        <img src="https://via.placeholder.com/200" class="custom-card-img-top" alt="Main Card 4">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Main Card 4</h5>
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 1"></a>
+                                    <p>Title 1</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 2"></a>
+                                    <p>Title 2</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 3"></a>
+                                    <p>Title 3</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 4"></a>
+                                    <p>Title 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a href="./json shooping/productList.html">
+                    <div class="custom-main-card">
+                        <img src="https://via.placeholder.com/200" class="custom-card-img-top" alt="Main Card 4">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Main Card 4</h5>
+                            <div class="row">
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 1"></a>
+                                    <p>Title 1</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 2"></a>
+                                    <p>Title 2</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 3"></a>
+                                    <p>Title 3</p>
+                                </div>
+                                <div class="col-3">
+                                    <a href="./json shooping/productStore.html"><img
+                                            src="https://via.placeholder.com/100" alt="Sub Card 4"></a>
+                                    <p>Title 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container demo-section " style="background-color: inherit;">
+            <div class="row">
+                <center>
+                    <h1>Based on your interests</h1>
+                </center>
+                <div class="col-md-4">
+                    <div class="demo-card">
+                        <img alt="Screenshot of Home 01 demo page showing a beauty product with the text 'Beauty Inspired by Real Life'"
+                            height="400"
+                            src="https://images.pexels.com/photos/1377034/pexels-photo-1377034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 01
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card">
+                        <img alt="Screenshot of Home 02 demo page showing a beauty product with the text 'Body Daily Oil Wash'"
+                            height="400"
+                            src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 02
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card">
+                        <img alt="Screenshot of Home 03 demo page showing a beauty product with the text 'Care for Your Skin, Care for Your Beauty'"
+                            height="400"
+                            src="https://images.pexels.com/photos/1749452/pexels-photo-1749452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 03
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="demo-card">
+                        <img alt="Screenshot of Home 04 demo page showing a beauty product with the text 'Reveal The Beauty of Skin'"
+                            height="400"
+                            src="https://images.pexels.com/photos/8450508/pexels-photo-8450508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 04
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card">
+                        <img alt="Screenshot of Home 05 demo page showing a beauty product with the text 'Get The Skin You Want To Feel'"
+                            height="400"
+                            src="https://images.pexels.com/photos/3865679/pexels-photo-3865679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 05
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card" style="background-color: #191265;">
+                        <img alt="Screenshot of Home 06 demo page showing a beauty product with the text 'Beauty Product Display'"
+                            height="400" src="https://images.pexels.com/photos/3993398/pexels-photo-3993398.jpeg"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 06
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card">
+                        <img alt="Screenshot of Home 06 demo page showing a beauty product with the text 'Beauty Product Display'"
+                            height="400"
+                            src="https://images.pexels.com/photos/2985162/pexels-photo-2985162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 06
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card" style="background-color: #191265;">
+                        <img alt="Screenshot of Home 06 demo page showing a beauty product with the text 'Beauty Product Display'"
+                            height="400"
+                            src="https://images.pexels.com/photos/375897/pexels-photo-375897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 06
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card" style="background-color: #191265;">
+                        <img alt="Screenshot of Home 06 demo page showing a beauty product with the text 'Beauty Product Display'"
+                            height="400"
+                            src="https://images.pexels.com/photos/3167310/pexels-photo-3167310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 06
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card" style="background-color: #191265;">
+                        <img alt="Screenshot of Home 06 demo page showing a beauty product with the text 'Beauty Product Display'"
+                            height="400"
+                            src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 06
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card" style="background-color: #191265;">
+                        <img alt="Screenshot of Home 06 demo page showing a beauty product with the text 'Beauty Product Display'"
+                            height="400"
+                            src="https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 06
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="demo-card" style="background-color: #191265;">
+                        <img alt="Screenshot of Home 06 demo page showing a beauty product with the text 'Beauty Product Display'"
+                            height="400"
+                            src="https://images.pexels.com/photos/923192/pexels-photo-923192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="600" />
+                        <div class="demo-card-title">
+                            Home 06
+                        </div>
+                        <div class="pdetails">
+                            <details>
+                                <summary>Show more</summary>
+                                <p>Some text</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class=" border-top pt-4" style="background-color: #EBEBDF;">
+            <div class="container">
+                <div class="row" style="background-color: #EBEBDF;">
+                    <div class="col-lg-6 col-md-6 col-12 mb-4">
+                        <h5 class="text-center mb-3">Our Location</h5>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345094333!2d-122.41941508468228!3d37.77492927975983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b63bb79b%3A0x3c3b123456789abc!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                                allowfullscreen="" loading="lazy" class="map-iframe"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h5 class="text-center mb-3">Fill your address</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const dynamicText = document.querySelector("h1 span");
+        const words = ["The Future", "the Luxary", "at Luxora"];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        const typeEffect = () => {
+            let currentWord = words[wordIndex];
+
+            if (currentWord.includes("Luxora")) {
+                let typedText = currentWord.substring(0, charIndex);
+
+                if (charIndex >= currentWord.length) {
+                    typedText = typedText.replace('Luxora',
+                        '<span style="color: #191265;">Lux</span><span style="color: #33b5ff;">ora</span>');
+                }
+                dynamicText.innerHTML = typedText;
+            } else {
+                dynamicText.textContent = currentWord.substring(0, charIndex);
+            }
+
+            dynamicText.classList.add("stop-blinking");
+
+            if (!isDeleting && charIndex < currentWord.length) {
+                charIndex++;
+                setTimeout(typeEffect, 200);
+            } else if (isDeleting && charIndex > 0) {
+                charIndex--;
+                setTimeout(typeEffect, 100);
+            } else {
+                isDeleting = !isDeleting;
+                dynamicText.classList.remove("stop-blinking");
+                wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+                setTimeout(typeEffect, 1200);
+            }
+        }
+
+        typeEffect();
+    </script>
+</body>
+
+</html>

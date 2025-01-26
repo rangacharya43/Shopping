@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy | Filter by Price</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background: #333;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .filter {
+      margin-top: 1rem;
+    }
+    .filter label {
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .filter input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .filter button {
+      width: 100%;
+      padding: 0.5rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .filter button:hover {
+      background-color: #0056b3;
+    }
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: 2rem;
+    }
+    .main-content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .product-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product h3 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    .product p {
+      font-size: 1rem;
+      margin: 0.5rem 0 1rem;
+      color: #555;
+    }
+    .product a {
+      display: block;
+      background: #007BFF;
+      color: white;
+      padding: 0.8rem;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+    .product a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Filter by Price</h2>
+    <div class="filter">
+      <label for="minPrice">Min Price</label>
+      <input type="number" id="minPrice" placeholder="Enter minimum price">
+      <label for="maxPrice">Max Price</label>
+      <input type="number" id="maxPrice" placeholder="Enter maximum price">
+      <button id="filterButton">Filter</button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1>Our Products</h1>
+    <div class="product-grid" id="productGrid">
+      <div class="product" data-price="49">
+        <img src="https://via.placeholder.com/250" alt="Product 1">
+        <h3>Makeup Kit</h3>
+        <p>$49</p>
+        <a href="#">Buy Now</a>
+      </div>
+      <div class="product" data-price="79">
+        <img src="https://via.placeholder.com/250" alt="Product 2">
+        <h3>Stylish Jacket</h3>
+        <p>$79</p>
+        <a href="#">Buy Now</a>
+      </div>
+      <div class="product" data-price="129">
+        <img src="https://via.placeholder.com/250" alt="Product 3">
+        <h3>Coffee Table</h3>
+        <p>$129</p>
+        <a href="#">Buy Now</a>
+      </div>
+      <div class="product" data-price="499">
+        <img src="https://via.placeholder.com/250" alt="Product 4">
+        <h3>Smartphone</h3>
+        <p>$499</p>
+        <a href="#">Buy Now</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const filterButton = document.getElementById("filterButton");
+    const minPriceInput = document.getElementById("minPrice");
+    const maxPriceInput = document.getElementById("maxPrice");
+    const products = document.querySelectorAll(".product");
+
+    filterButton.addEventListener("click", () => {
+      const minPrice = parseInt(minPriceInput.value) || 0;
+      const maxPrice = parseInt(maxPriceInput.value) || Infinity;
+
+      products.forEach((product) => {
+        const price = parseInt(product.getAttribute("data-price"));
+
+        if (price >= minPrice && price <= maxPrice) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
