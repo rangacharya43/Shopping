@@ -1,0 +1,45 @@
+body {
+    background-color: #EBEBDF;
+}
+
+.map-container {
+    width: 100%;
+    overflow: hidden;
+    border: solid #EBEBDF;
+    border-radius: 8px;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+.navbar {
+    position: relative;
+    font-family: monospace;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.transparent-navbar {
+    background: linear-gradient(135deg, #EBEBDF 69.9%, #19126579 31.1%) !important;
+    box-shadow: none;
+}
+
+.navbar-brand {
+    font-size: 55px;
+    padding-left: 2%;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #EBEBDF;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: aqua;
+}
